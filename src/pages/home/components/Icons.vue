@@ -87,6 +87,7 @@ export default {
 
 <style lang="stylus" scoped>
   @import '~@styles/variables.styl'
+  @import '~@styles/mixin.styl'
 
   .icons >>> .swiper-container
     // reserve space, same as Swiper.vue
