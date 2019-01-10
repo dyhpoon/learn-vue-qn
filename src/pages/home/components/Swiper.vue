@@ -16,16 +16,17 @@ export default {
     return {
       swiperOption: {
         pagination: '.swiper-pagination',
-        loop: true
+        loop: true,
+        autoplay: false
       },
       swiperList: [
         {
           id: 1,
-          image: '//img1.qunarzz.com/sight/p0/1603/97/97a91e052b51aa9890.water.jpg_600x330_6c2afdc5.jpg'
+          image: '//img1.qunarzz.com/sight/p0/1607/7c/7cda8b6782dabd80b4.img.jpg_600x330_8572a930.jpg'
         },
         {
           id: 2,
-          image: '//img1.qunarzz.com/sight/p0/1607/7c/7cda8b6782dabd80b4.img.jpg_600x330_8572a930.jpg'
+          image: '//img1.qunarzz.com/sight/p0/1603/97/97a91e052b51aa9890.water.jpg_600x330_6c2afdc5.jpg'
         }
       ]
     }

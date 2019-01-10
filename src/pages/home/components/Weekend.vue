@@ -49,7 +49,7 @@ export default {
         {
           id: 5,
           image: 'http://img1.qunarzz.com/sight/source/1505/b2/fde1bfcd057a52.jpg_r_640x214_bbf3fa44.jpg',
-          title: "Beijing Aquarium",
+          title: 'Beijing Aquarium',
           description: 'Beijing Aquarium is the largest and most advanced inland aquarium in China, covering a total area of 30 acres.'
         }
       ]
