@@ -1,0 +1,141 @@
+<template>
+  <div class="icons">
+    <swiper>
+
+      <swiper-slide v-for="(page, index) of pages" :key="index">
+        <div class="icon" v-for="item of page" :key="item.id">
+          <div class="icon-img">
+            <img class="icon-img-content" :src="item.image" />
+          </div>
+          <p class="icon-desc">{{item.description}}</p>
+        </div>
+      </swiper-slide>
+
+    </swiper>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'HomeIcons',
+  data () {
+    return {
+      iconList: [
+        {
+          id: 1,
+          image: 'http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png',
+          description: 'Popular Places'
+        },
+        {
+          id: 2,
+          image: 'http://img1.qunarzz.com/piao/fusion/1803/96/c70f1e85ae4a4f02.png',
+          description: 'Natural Scenery'
+        },
+        {
+          id: 3,
+          image: 'http://img1.qunarzz.com/piao/fusion/1803/ab/6f7d6e44963c9302.png',
+          description: 'Hot Spring'
+        },
+        {
+          id: 4,
+          image: 'http://img1.qunarzz.com/piao/fusion/1803/54/35899492b1302802.png',
+          description: 'Theme Park'
+        },
+        {
+          id: 5,
+          image: 'http://img1.qunarzz.com/piao/fusion/1803/96/c70f1e85ae4a4f02.png',
+          description: 'Others'
+        },
+        {
+          id: 6,
+          image: 'http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png',
+          description: 'Popular Places'
+        },
+        {
+          id: 7,
+          image: 'http://img1.qunarzz.com/piao/fusion/1803/96/c70f1e85ae4a4f02.png',
+          description: 'Natural Scenery'
+        },
+        {
+          id: 8,
+          image: 'http://img1.qunarzz.com/piao/fusion/1803/ab/6f7d6e44963c9302.png',
+          description: 'Hot Spring'
+        },
+        {
+          id: 9,
+          image: 'http://img1.qunarzz.com/piao/fusion/1803/54/35899492b1302802.png',
+          description: 'Theme Park'
+        }
+      ]
+    }
+  },
+  computed: {
+    pages () {
+      const pages = []
+      this.iconList.forEach((item, index) => {
+        const page = Math.floor(index / 8)
+        if (!pages[page]) {
+          pages[page] = []
+        }
+        pages[page].push(item)
+      })
+      return pages
+    }
+  }
+}
+</script>
+
+<style lang="stylus" scoped>
+  @import '~@styles/variables.styl'
+
+  .icons >>> .swiper-container
+    // reserve space, same as Swiper.vue
+    // overflow: hidden # remove overflow hidden, cause swiper-container already has this property
+    height: 0
+    width: 100%
+    padding-bottom: 50%
+
+  .icons
+    .icon
+      // reserve space, same as Swiper.vue
+      float: left
+      width: 25%
+      height: 0
+      padding-bottom: 25%
+
+      // fix icon-img size
+      position: relative
+
+      .icon-img
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        bottom: .44rem
+
+        box-sizing: border-box  // fix oversize
+
+        // styles
+        padding: .1rem
+
+        .icon-img-content
+          height: 100%
+
+          // center
+          display: block
+          margin: 0 auto
+
+      .icon-desc
+        position: absolute
+        bottom: 0
+        left: 0
+        right: 0
+        height: .44rem
+        line-height: .44rem
+        color: $darkTextColor
+        text-align: center
+        font-size: .22rem
+
+        // if text is too long
+        ellipsis()
+</style>
