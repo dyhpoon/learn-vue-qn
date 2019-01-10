@@ -97,6 +97,8 @@ export default {
     padding-bottom: 50%
 
   .icons
+    margin-top: .1rem
+
     .icon
       // reserve space, same as Swiper.vue
       float: left
