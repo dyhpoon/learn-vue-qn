@@ -18,61 +18,13 @@
 <script>
 export default {
   name: 'HomeIcons',
-  data () {
-    return {
-      iconList: [
-        {
-          id: 1,
-          image: 'http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png',
-          description: 'Popular Places'
-        },
-        {
-          id: 2,
-          image: 'http://img1.qunarzz.com/piao/fusion/1803/96/c70f1e85ae4a4f02.png',
-          description: 'Natural Scenery'
-        },
-        {
-          id: 3,
-          image: 'http://img1.qunarzz.com/piao/fusion/1803/ab/6f7d6e44963c9302.png',
-          description: 'Hot Spring'
-        },
-        {
-          id: 4,
-          image: 'http://img1.qunarzz.com/piao/fusion/1803/54/35899492b1302802.png',
-          description: 'Theme Park'
-        },
-        {
-          id: 5,
-          image: 'http://img1.qunarzz.com/piao/fusion/1803/96/c70f1e85ae4a4f02.png',
-          description: 'Others'
-        },
-        {
-          id: 6,
-          image: 'http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png',
-          description: 'Popular Places'
-        },
-        {
-          id: 7,
-          image: 'http://img1.qunarzz.com/piao/fusion/1803/96/c70f1e85ae4a4f02.png',
-          description: 'Natural Scenery'
-        },
-        {
-          id: 8,
-          image: 'http://img1.qunarzz.com/piao/fusion/1803/ab/6f7d6e44963c9302.png',
-          description: 'Hot Spring'
-        },
-        {
-          id: 9,
-          image: 'http://img1.qunarzz.com/piao/fusion/1803/54/35899492b1302802.png',
-          description: 'Theme Park'
-        }
-      ]
-    }
+  props: {
+    list: Array
   },
   computed: {
     pages () {
       const pages = []
-      this.iconList.forEach((item, index) => {
+      this.list.forEach((item, index) => {
         const page = Math.floor(index / 8)
         if (!pages[page]) {
           pages[page] = []
