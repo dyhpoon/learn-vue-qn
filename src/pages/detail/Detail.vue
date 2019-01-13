@@ -1,6 +1,6 @@
 <template>
   <div>
-    <detail-banner />
+    <detail-banner :place="place" :banner="banner" :galleryImages="galleryImages" />
     <detail-header />
     <div class="content">
       <detail-list :list="list" />
@@ -9,6 +9,7 @@
 </template>
 
 <script>
+import axios from 'axios'
 import DetailBanner from './components/Banner'
 import DetailHeader from './components/Header'
 import DetailList from './components/List'
@@ -21,29 +22,29 @@ export default {
   },
   data () {
     return {
-      list: [
-        {
-          title: 'Adult',
-          children: [
-            {
-              title: 'Adult - Day Pass',
-            },
-            {
-              title: 'Adult - Two Day Pass'
-            }
-          ]
-        },
-        {
-          title: 'Student'
-        },
-        {
-          title: 'Child'
-        },
-        {
-          title: 'Senior'
-        }
-      ]
+      place: '',
+      banner: '',
+      galleryImages: [],
+      list: []
     }
+  },
+  methods: {
+    getDetailInfo () {
+      axios.get('/api/detail.json', {
+        params: {
+          id: this.$route.params.id
+        }
+      }).then(res => {
+        const data = res.data.data
+        this.place = data.place
+        this.banner = data.banner
+        this.galleryImages = data.gallery_images
+        this.list = data.category_list
+      })
+    }
+  },
+  mounted () {
+    this.getDetailInfo()
   }
 }
 </script>
