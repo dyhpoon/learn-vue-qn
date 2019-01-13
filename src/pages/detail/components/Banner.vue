@@ -19,7 +19,7 @@
 <script>
 import CommonGallery from '@common/gallery/Gallery'
 export default {
-  name: 'Banner',
+  name: 'DetailBanner',
   components: {
     CommonGallery
   },
