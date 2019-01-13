@@ -17,12 +17,14 @@
 </template>
 
 <script>
+import { mapState } from 'vuex'
 export default {
   name: 'HomeHeader',
   computed: {
+    ...mapState(['city']),
     currentCity () {
-      const firstLetter = this.$store.state.city.charAt(0).toUpperCase()
-      const restLetters = this.$store.state.city.slice(1)
+      const firstLetter = this.city.charAt(0).toUpperCase()
+      const restLetters = this.city.slice(1)
       return firstLetter + restLetters
     }
   }
@@ -53,7 +55,8 @@ export default {
       border-radius: .1rem
       color: #ccc
     .header-right
-      width: 1.24rem
+      min-width: 1.24rem
+      padding: 0 .1rem
       float: right
       text-align: center
       color: #fff
