@@ -5,7 +5,7 @@
     </div>
     <div v-show="keyword" class="search-content" ref="search">
       <ul>
-        <li class="search-item border-bottom" v-for="item of list" :key="item.id">{{item.name}}</li>
+        <li class="search-item border-bottom" v-for="item of list" :key="item.id" @click="handleCityClick(item.name)">{{item.name}}</li>
         <li v-show="hasNoData" class="search-item border-bottom">Not found</li>
       </ul>
     </div>
@@ -24,6 +24,13 @@ export default {
       keyword: '', // use v-model to do double binding
       list: [],
       timer: null
+    }
+  },
+  methods: {
+    handleCityClick (city) {
+      this.$store.commit('changeCity', city)
+      this.keyword = ''
+      this.$router.push('/')
     }
   },
   computed: {

@@ -9,7 +9,7 @@
       </div>
     <router-link to="/city">
       <div class="header-right">
-        {{this.city}}
+        {{currentCity}}
         <span class="iconfont arrow-icon">&#xe64a;</span>
       </div>
     </router-link>
@@ -19,8 +19,12 @@
 <script>
 export default {
   name: 'HomeHeader',
-  props: {
-    city: String
+  computed: {
+    currentCity () {
+      const firstLetter = this.$store.state.city.charAt(0).toUpperCase()
+      const restLetters = this.$store.state.city.slice(1)
+      return firstLetter + restLetters
+    }
   }
 }
 </script>

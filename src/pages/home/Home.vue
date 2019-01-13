@@ -30,7 +30,6 @@ export default {
   },
   data () {
     return {
-      city: '',
       swiperList: [],
       iconList: [],
       recommendList: [],
@@ -42,7 +41,6 @@ export default {
       axios.get('/api/home.json')
         .then(res => {
           const data = res.data.data
-          this.city = data.city
           this.swiperList = data.swiper_list
           this.iconList = data.icon_list
           this.recommendList = data.recommend_list
