@@ -1,21 +1,42 @@
 <template>
-  <div class="banner">
-    <img class="banner-img" src="//img1.qunarzz.com/sight/p0/1811/42/42958b9abc760e2aa3.img.jpg_600x330_9efd59b7.jpg" />
-    <div class="banner-info">
-      <div class="banner-title">
-        三亚千古情景区
-      </div>
-      <div class="banner-number">
-        <span class="iconfont banner-icon">&#xe692;</span>
-        39
+  <div>
+    <div class="banner" @click="handleBannerClick">
+      <img class="banner-img" src="//img1.qunarzz.com/sight/p0/1811/42/42958b9abc760e2aa3.img.jpg_600x330_9efd59b7.jpg" />
+      <div class="banner-info">
+        <div class="banner-title">
+          三亚千古情景区
+        </div>
+        <div class="banner-number">
+          <span class="iconfont banner-icon">&#xe692;</span>
+          39
+        </div>
       </div>
     </div>
+    <common-gallery v-show="showGallery" :images="images" @close="handleGalleryClose"/>
   </div>
 </template>
 
 <script>
+import CommonGallery from '@common/gallery/Gallery'
 export default {
-  name: 'Banner'
+  name: 'Banner',
+  components: {
+    CommonGallery
+  },
+  data () {
+    return {
+      showGallery: false,
+      images: ['http://img1.qunarzz.com/sight/p0/1812/24/24d847f31bd37f82a3.water.jpg_r_800x800_96e42afc.jpg']
+    }
+  },
+  methods: {
+    handleBannerClick () {
+      this.showGallery = true
+    },
+    handleGalleryClose () {
+      this.showGallery = false
+    }
+  }
 }
 </script>
 
