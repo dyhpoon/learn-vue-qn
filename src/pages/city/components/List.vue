@@ -13,7 +13,7 @@
         <div class="title border-topbottom">Popular Cities</div>
         <div class="button-list">
           <div class="button-wrapper" v-for="item of hot" :key="item.id">
-            <div class="butgggton">{{item.name}}</div>
+            <div class="button">{{item.name}}</div>
           </div>
         </div>
       </div>
