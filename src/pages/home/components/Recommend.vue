@@ -2,7 +2,7 @@
   <div>
     <div class="title">Recommendations</div>
     <ul>
-      <li class="item border-bottom" v-for="item of list" :key="item.id">
+      <router-link tag="li" :to="`/detail/${item.id}`" class="item border-bottom" v-for="item of list" :key="item.id">
         <img class="item-img" :src="item.image" />
 
         <div class="item-info">
@@ -10,7 +10,7 @@
           <p class="item-desc">{{item.description}}</p>
           <button class="item-button">View Details</button>
         </div>
-      </li>
+      </router-link>
     </ul>
   </div>
 </template>
