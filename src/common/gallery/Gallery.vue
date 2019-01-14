@@ -44,6 +44,9 @@ export default {
   .container >>> .swiper-container
     overflow: inherit
 
+  .container >>> .swiper-slide
+    margin: auto 0
+
   .container
     display: flex
     flex-direction: column
