@@ -14,72 +14,72 @@
     "icon_list": [
       {
         "id": 1,
-        "image": "http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png",
+        "image": "//img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png",
         "description": "Popular Places"
       },
       {
         "id": 2,
-        "image": "http://img1.qunarzz.com/piao/fusion/1803/96/c70f1e85ae4a4f02.png",
+        "image": "//img1.qunarzz.com/piao/fusion/1803/96/c70f1e85ae4a4f02.png",
         "description": "Natural Scenery"
       },
       {
         "id": 3,
-        "image": "http://img1.qunarzz.com/piao/fusion/1803/ab/6f7d6e44963c9302.png",
+        "image": "//img1.qunarzz.com/piao/fusion/1803/ab/6f7d6e44963c9302.png",
         "description": "Hot Spring"
       },
       {
         "id": 4,
-        "image": "http://img1.qunarzz.com/piao/fusion/1803/54/35899492b1302802.png",
+        "image": "//img1.qunarzz.com/piao/fusion/1803/54/35899492b1302802.png",
         "description": "Theme Park"
       },
       {
         "id": 5,
-        "image": "http://img1.qunarzz.com/piao/fusion/1803/96/c70f1e85ae4a4f02.png",
+        "image": "//img1.qunarzz.com/piao/fusion/1803/96/c70f1e85ae4a4f02.png",
         "description": "Others"
       },
       {
         "id": 6,
-        "image": "http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png",
+        "image": "//img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png",
         "description": "Popular Places"
       },
       {
         "id": 7,
-        "image": "http://img1.qunarzz.com/piao/fusion/1803/96/c70f1e85ae4a4f02.png",
+        "image": "//img1.qunarzz.com/piao/fusion/1803/96/c70f1e85ae4a4f02.png",
         "description": "Natural Scenery"
       },
       {
         "id": 8,
-        "image": "http://img1.qunarzz.com/piao/fusion/1803/ab/6f7d6e44963c9302.png",
+        "image": "//img1.qunarzz.com/piao/fusion/1803/ab/6f7d6e44963c9302.png",
         "description": "Hot Spring"
       },
       {
         "id": 9,
-        "image": "http://img1.qunarzz.com/piao/fusion/1803/54/35899492b1302802.png",
+        "image": "//img1.qunarzz.com/piao/fusion/1803/54/35899492b1302802.png",
         "description": "Theme Park"
       }
     ],
     "recommend_list": [
       {
         "id": 1,
-        "image": "http://img1.qunarzz.com/sight/p0/1801/4e/4ee5653be58dcb1a3.water.jpg_200x200_d169685d.jpg",
+        "image": "//img1.qunarzz.com/sight/p0/1801/4e/4ee5653be58dcb1a3.water.jpg_200x200_d169685d.jpg",
         "title": "Hong Kong Disneyland",
         "description": "Special Springtime Offer Up to 30% discount for Kingdom Club Rooms"
       },
       {
         "id": 2,
-        "image": "http://img1.qunarzz.com/sight/p0/1811/42/42958b9abc760e2aa3.img.jpg_200x200_09b6d404.jpg",
+        "image": "//img1.qunarzz.com/sight/p0/1811/42/42958b9abc760e2aa3.img.jpg_200x200_09b6d404.jpg",
         "title": "Sanya historic scene area",
         "description": "all the year round with li and miao New Year big temple fair, hc section, water-sprinkling festival, chinese-style chest covering, masks and other activities, are very popular with tourists, is an ideal destination to sanya vigil."
       },
       {
         "id": 3,
-        "image": "http://img1.qunarzz.com/sight/p0/201405/27/ef08b0cb4a5afb2f570e5c4dff5f743e.jpg_200x200_f3ad8918.jpg",
+        "image": "//img1.qunarzz.com/sight/p0/201405/27/ef08b0cb4a5afb2f570e5c4dff5f743e.jpg_200x200_f3ad8918.jpg",
         "title": "Chimelong International Circus",
         "description": "Guangzhou Chimelong International Circus will be ushering in the festival with a special themed event"
       },
       {
         "id": 4,
-        "image": "http://img1.qunarzz.com/sight/p0/1809/ff/ffc62d609a5c3521a3.img.jpg_200x200_40c7c1e0.jpg",
+        "image": "//img1.qunarzz.com/sight/p0/1809/ff/ffc62d609a5c3521a3.img.jpg_200x200_40c7c1e0.jpg",
         "title": "Yalong Bay Tropical Paradise Forest Park",
         "description": "Surround the National Hoilday Resort of Yalong, leveled on world-class eco-resort coast mountain forest with various species, unique geographic structure, abundant water resources and colorful folk culture."
       }
@@ -87,31 +87,31 @@
     "weekend_list": [
       {
         "id": 1,
-        "image": "http://img1.qunarzz.com/sight/source/1510/6e/1ea71e2f04e.jpg_r_640x214_aa6f091d.jpg",
+        "image": "//img1.qunarzz.com/sight/source/1510/6e/1ea71e2f04e.jpg_r_640x214_aa6f091d.jpg",
         "title": "Beijing\\'s Top Hot Springs",
         "description": "Spending a few hours at a hot spring is a great way to relax and rejuvenate."
       },
       {
         "id": 2,
-        "image": "http://img1.qunarzz.com/sight/source/1505/aa/7baaf8a851d221.jpg_r_640x214_1431200f.jpg",
+        "image": "//img1.qunarzz.com/sight/source/1505/aa/7baaf8a851d221.jpg_r_640x214_1431200f.jpg",
         "title": "Top 10 Must See Places in Beijing",
         "description": "You should make sure to get around the top ten places in Beijing City. In this way, you can say that you have been to Beijing City!"
       },
       {
         "id": 3,
-        "image": "http://img1.qunarzz.com/sight/source/1505/9e/21df651e19af5d.jpg_r_640x214_3ea5bb38.jpg",
+        "image": "//img1.qunarzz.com/sight/source/1505/9e/21df651e19af5d.jpg_r_640x214_3ea5bb38.jpg",
         "title": "The Imperial City",
         "description": "It is a section of the city of Beijing in the Ming and Qing dynasties, with the Forbidden City at its center."
       },
       {
         "id": 4,
-        "image": "http://img1.qunarzz.com/sight/source/1505/ce/bc89bc2f0e33ea.jpg_r_640x214_3e408453.jpg",
+        "image": "//img1.qunarzz.com/sight/source/1505/ce/bc89bc2f0e33ea.jpg_r_640x214_3e408453.jpg",
         "title": "Best Cultural Museums in Beijing",
         "description": "Millions of words have been written ruminating on the idea of \\'culture\\' – what it is, what it means, why it matters – but, broadly defined, it\\'s the stuff that makes up the rich fabric of human civilisation."
       },
       {
         "id": 5,
-        "image": "http://img1.qunarzz.com/sight/source/1505/b2/fde1bfcd057a52.jpg_r_640x214_bbf3fa44.jpg",
+        "image": "//img1.qunarzz.com/sight/source/1505/b2/fde1bfcd057a52.jpg_r_640x214_bbf3fa44.jpg",
         "title": "Beijing Aquarium",
         "description": "Beijing Aquarium is the largest and most advanced inland aquarium in China, covering a total area of 30 acres."
       }
