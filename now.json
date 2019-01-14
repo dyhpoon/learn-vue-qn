@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "public": false,
+  "builds": [
+    { "src": "package.json", "use": "@now/static-build" },
+    { "src": "static/mock/*.json", "use": "@now/static" }
+  ],
+  "routes": [
+    { "src": "/api/(.*)", "dest": "static/mock/$1" },
+    { "src": "/(.*)", "dest": "/$1" }
+  ],
+  "env": {
+    "NODE_ENV": "production"
+  }
+}
